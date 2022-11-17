@@ -1,0 +1,41 @@
+<div class="home-content-container">
+  <div class="banner">
+    <h1 class="banner-title">QQL Atlas</h1>
+    <p class="banner-description">
+      QQL is a collaborative experiment in generative art by Tyler Hobbs and Dandelion Wist Mané.
+    </p>
+
+    <p class="banner-description">
+      This gallery is a tribute to these artists and their work, by curating and displaying cool outputs in different visual categories of the QQL Algorithm.
+    </p>
+  </div>
+
+  <div class="cards-container">
+    <div class="col-lg-4">
+      <%= link_to letters_path do %>
+        <p>Letters</p>
+        <%= image_tag('letter_U_optimized.png') %>
+      <% end %>
+    </div>
+
+    <div class="col-lg-4">
+      <%= link_to numbers_path do %>
+        <p>Numbers</p>
+        <%= image_tag('number_7_optimized.png') %>
+      <% end %>
+    </div>
+
+    <div class="col-lg-4">
+      <%= link_to objects_path do %>
+        <p>Landscapes / Objects </p>
+        <%= image_tag('object_wave_optimized.png') %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="more-categories">
+    <p>More categories soon...</p>
+  </div>
+</div>
+
+<%= render 'shared/footer' %>
